@@ -9,20 +9,7 @@
 </head>
 <body>
 
-<!-- Load analytics-->
-<script data-goatcounter="https://pikman.goatcounter.com/count"
-        async src="//gc.zgo.at/count.js">
-</script>
 
-<!-- Load count.js and visitor counter-->
-<script>
-    var t = setInterval(function() {
-        if (window.goatcounter && window.goatcounter.visit_count) {
-            clearInterval(t)
-            window.goatcounter.visit_count({append: 'analytics'})
-        }
-    }, 100)
-</script>
 
   <!-- Accessibility skip link -->
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -201,6 +188,21 @@
         </div>
       </div>
     </section>
+
+    <!-- Load analytics-->
+    <script data-goatcounter="https://pikman.goatcounter.com/count"
+            async src="//gc.zgo.at/count.js">
+    </script>
+
+    <!-- Load count.js and visitor counter-->
+    <script>
+        var t = setInterval(function() {
+            if (window.goatcounter && window.goatcounter.visit_count) {
+                clearInterval(t)
+                window.goatcounter.visit_count({append: 'analytics'})
+            }
+        }, 100)
+    </script>
 
     <!-- ============ Analytics ============ -->
     <section id="analytics" class="section">
